@@ -57,3 +57,10 @@ nav {
     
     
 }
+
+#main {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-auto-rows: 95px;
+    margin-left: 180px;
+}
