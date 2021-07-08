@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    font-size: 10px;
+    margin: 0;
+    
+}
+
+
+/* navbar layout */
+
+nav {
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 50px auto 50px 50px 70px 100px;
+    padding: 25px;
+    font-size: 12px;
+    
+    
+}
+
+#app-icon {
+    position: relative;
+    bottom: 6px;
+    left: 8px;
+}
+
+#signin {
+    position: relative;
+    right: 20px;
+    height: 30px;
+    bottom: 10px;
+    width: 70px;
+    color: white;
+    background-color: rgb(69,132,241);
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    padding-bottom: 3px;
+    
+    
+}
+
+#sub-nav {
+    position: fixed;
+    top: 40px;
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 50px auto 50px 50px 70px 100px;
+    padding: 25px;
+    font-size: 12px;
+    
+    
+}
