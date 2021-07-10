@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Metropolis";
+    src: url("Metropolis-Regular.otf") format("opentype");
+}
+
+
 body {
     font-family: sans-serif;
     font-size: 10px;
@@ -115,15 +121,25 @@ _}
     display: flex;
     top: 0px;
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
     padding-bottom:20px ;
     font-size: 14px;
-    margin-left: 180px;
+    left: 180px;
     width: 100%;
-    
-    
-    
-    
+    border-bottom-style: solid;
+    border-color: black;
+    border-bottom-width: 
+}
+
+#sub-nav svg {
+    width: 17px;
+    margin-right: -30px;
+    margin-top: -6px;
+}
+
+#sub-nav a {
+    display: flex;
+    gap: 20px;
 }
 
 #main {
@@ -132,7 +148,7 @@ _}
     grid-auto-rows: 95px;
     margin-left: 180px;
     margin-right: -1120px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
     
 }
