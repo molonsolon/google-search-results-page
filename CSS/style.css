@@ -15,12 +15,60 @@ nav {
     width: 100%;
     display: grid;
     grid-template-rows: 40px;
-    grid-template-columns: 50px auto 50px 50px 70px 100px;
-    padding: 25px;
+    grid-template-columns: 130px auto 50px 70px 100px;
+    padding: 30px;
     font-size: 12px;
+    
+_}
+
+#logo {
+    width: 90px;
+}
+
+
+#search {
+    
+    display: grid;
+  
+    grid-template-rows:  60px ;
+    grid-template-columns: 680px;
     
     
 }
+
+#searchbar {
+    display: grid;
+    
+    border-style: solid;
+    width: 680px;
+    height: 45px;
+    border-radius: 50px;
+    
+    border-color: white;
+    outline: none;
+    z-index: 1;
+    box-shadow: 0 2px 6px hsl(240, 2%, 85%);
+ }
+
+ #mic-icon {
+    display: grid;
+    
+    z-index: 2;
+    margin-left: 600px;
+    margin-top: -60px;
+    width: 18px;
+}
+
+#search-icon {
+    display: grid;
+    margin-top: -60px;
+
+    z-index: 2;
+   
+}
+
+
+/* NOTE: distance from search to right buttons is responsive, use max-min properties*/
 
 #app-icon {
     position: relative;
