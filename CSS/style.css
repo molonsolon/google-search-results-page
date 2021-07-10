@@ -14,15 +14,15 @@ nav {
     max-width: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 130px auto 50px 70px 100px;
-    padding: 30px;
-    font-size: 12px;
-    
+    grid-template-rows: 60px;
+    grid-template-columns: 135px minmax(930px, 1650px) 30px 30px 30px;
+    padding: 25px 30px 20px 25px;
 _}
 
 #logo {
     width: 90px;
+    padding-top: 10px;
+    
 }
 
 
@@ -41,7 +41,7 @@ _}
     
     border-style: solid;
     width: 680px;
-    height: 45px;
+    height: 40px;
     border-radius: 50px;
     
     border-color: white;
@@ -55,20 +55,38 @@ _}
     
     z-index: 2;
     margin-left: 600px;
-    margin-top: -60px;
-    width: 18px;
+    margin-top: -24px;
+    width: 14px;
 }
 
 #search-icon {
     display: grid;
-    margin-top: -60px;
-
-    z-index: 2;
+    margin-top: -35px;
+    margin-left: 640px;
+    height: 24px;
+    
+   
    
 }
 
+#x-icon {
+    display: grid;
+    margin-top: -20px;
+    margin-left: 550px;
+}
 
-/* NOTE: distance from search to right buttons is responsive, use max-min properties*/
+
+/* NOTE: min 250px max 900px distance from searchbar*/
+#right-nav {
+    position: relative;
+    display: flex;
+    justify-content: right;
+  
+   padding-right: 20px;
+   padding-top: 30px;
+
+}
+
 
 #app-icon {
     position: relative;
@@ -93,15 +111,17 @@ _}
 }
 
 #sub-nav {
-    position: fixed;
-    top: 40px;
-    max-width: 100%;
+    position: relative;
+    display: flex;
+    top: 0px;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom:20px ;
+    font-size: 14px;
+    margin-left: 180px;
     width: 100%;
-    display: grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 50px auto 50px 50px 70px 100px;
-    padding: 25px;
-    font-size: 12px;
+    
+    
     
     
 }
@@ -111,4 +131,33 @@ _}
     grid-template-columns: 600px;
     grid-auto-rows: 95px;
     margin-left: 180px;
+    margin-right: -1120px;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+
+.result-item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    
+}
+
+.result-link {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 15px;
+    
+}
+
+.result-link a {
+    text-decoration: none;
+    color: black;
+}
+
+#search-result-main header {
+    font-size: 20px;
+    padding-bottom: 10px;
 }
